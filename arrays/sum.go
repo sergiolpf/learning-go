@@ -10,7 +10,7 @@ func Sum(numbers []int) int {
 	return sum
 }
 
-func SumAll(numbersToSum ...[]int) []int {
+/*func SumAll(numbersToSum ...[]int) []int {
 
 	/*lengthOfNumbers := len(numbersToSum)
 	sums := make([]int, lengthOfNumbers)
@@ -18,7 +18,7 @@ func SumAll(numbersToSum ...[]int) []int {
 	for i, numbers := range numbersToSum {
 		sums[i] = Sum(numbers)
 	}
-	*/
+
 	var sums []int
 
 	for _, numbers := range numbersToSum {
@@ -26,5 +26,9 @@ func SumAll(numbersToSum ...[]int) []int {
 	}
 	return sums
 }
-
+*/
+/*
 func SumAllTails(numbersToSum ...[]int) []int {
+
+}
+*/

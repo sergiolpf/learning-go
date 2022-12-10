@@ -1,24 +1,24 @@
 package arrays
 
 import (
-	"reflect"
 	"testing"
 )
 
 func TestSum(t *testing.T) {
 
-	t.Run("Collecction of any size", func(t *testing.T) {
-		numbers := []int{1, 2, 3}
+	t.Run("Collection of 5 items", func(t *testing.T) {
+		numbers := []int{1, 2, 3, 4, 5}
 
 		got := Sum(numbers)
-		want := 6
+		want := 15
 
 		if got != want {
-			t.Errorf("got %d want %d given, %v", got, want, numbers)
+			t.Errorf("got %d want %d, %v", got, want, numbers)
 		}
 	})
 }
 
+/*
 func TestSumAll(t *testing.T) {
 
 	got := SumAll([]int{1, 2}, []int{0, 9})
@@ -30,7 +30,9 @@ func TestSumAll(t *testing.T) {
 	}
 }
 
+
 func TestSumAllTails(t *testing.T) {
+	func TestSumAllTails(t *testing.T) {
 	got := SumAllTalis([]int{1, 2}, []int{0, 9})
 
 	want := []int{2, 9}
@@ -40,3 +42,4 @@ func TestSumAllTails(t *testing.T) {
 	}
 
 }
+*/
