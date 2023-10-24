@@ -1,16 +1,19 @@
 package iteration
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
-func Repeat(character string) string {
+func Repeat(character string, quantity int) string {
 	var repeated string
-	for i := 0; i < 5; i++ {
-		repeated = repeated + character
+	for i := 0; i < quantity; i++ {
+		repeated += character
 	}
 	return repeated
 
 }
 
 func main() {
-	fmt.Println(Repeat("ha"))
+	fmt.Println(Repeat("ha", rand.Intn(345)))
 }
